@@ -31,7 +31,7 @@ const io = new Server(server, {
 });
 
 server.listen(443, () => {
-  // console.log("Listening on port ", 443)
+  console.log("Listening on port ", 443)
 })
 
 io.listen(server);
