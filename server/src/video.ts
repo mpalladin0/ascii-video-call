@@ -49,4 +49,15 @@ export class Video {
             return stream;
         } catch(err) {}
     }
+
+    async getDisplayMedia() {        
+        let stream = null
+        try {
+            stream = await navigator.mediaDevices.getDisplayMedia({ video: true, audio: false })
+
+            // console.log(stream);
+            this.srcObject = stream;
+            return stream;
+        } catch (err) {}
+    }
 }

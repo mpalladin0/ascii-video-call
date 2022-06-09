@@ -1,11 +1,12 @@
 export class AsciiConverter {
-    characters = (" .,:;i1tfLCG08@").split("")
+    // characters = (" .,:;i1tfLCG08@").split("")
+    characters = ("   .,•:;i1!tgLCG08@#").split("")
 
     canvas: HTMLCanvasElement;
     context: CanvasRenderingContext2D | null;
     canvasWidth: number;
     canvasHeight: number;
-    contrastFactor = (259 * (128 + 255)) / (255 * (259 - 128))
+    contrastFactor = (259 * (0 + 255)) / (255 * (259 - 0))
 
     constructor(canvas: HTMLCanvasElement) {
         this.canvas = canvas;
